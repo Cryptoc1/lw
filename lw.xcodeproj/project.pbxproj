@@ -12,6 +12,7 @@
 		7E83F9891C3CA4780067717D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E83F9881C3CA4780067717D /* Assets.xcassets */; };
 		7E83F98C1C3CA4780067717D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E83F98A1C3CA4780067717D /* Main.storyboard */; };
 		7E83F9961C3CD2070067717D /* LWWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83F9951C3CD2070067717D /* LWWindowController.swift */; };
+		7E83F9981C3CD3AF0067717D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 7E83F9971C3CD3AF0067717D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7E83F98B1C3CA4780067717D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E83F98D1C3CA4780067717D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E83F9951C3CD2070067717D /* LWWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWWindowController.swift; sourceTree = "<group>"; };
+		7E83F9971C3CD3AF0067717D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				7E83F9841C3CA4780067717D /* AppDelegate.swift */,
 				7E83F9951C3CD2070067717D /* LWWindowController.swift */,
+				7E83F9971C3CD3AF0067717D /* README.md */,
 				7E83F9861C3CA4780067717D /* ViewController.swift */,
 				7E83F9881C3CA4780067717D /* Assets.xcassets */,
 				7E83F98A1C3CA4780067717D /* Main.storyboard */,
@@ -136,6 +139,7 @@
 			files = (
 				7E83F9871C3CA4780067717D /* ViewController.swift in Sources */,
 				7E83F9851C3CA4780067717D /* AppDelegate.swift in Sources */,
+				7E83F9981C3CD3AF0067717D /* README.md in Sources */,
 				7E83F9961C3CD2070067717D /* LWWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
