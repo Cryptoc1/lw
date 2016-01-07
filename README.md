@@ -1,5 +1,5 @@
 # lw
-lw stands for live wallpaper, and as the name would suggest, let's you set live wallpapers on OS X.
+lw stands for live wallpaper, and as the name would suggest, lets you set live wallpapers on OS X.
 
 ### How it Works
 lw works by placing a cocoa window in-between the desktop and desktop icon layers of the windowing system (`CGWindowLayerKey`). 
