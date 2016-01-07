@@ -12,4 +12,4 @@ obvious energy concerns with having a WebView constantly running on the desktop.
 
 With that said, please understand that this project is anything *super* fancy, but just some code to play around with.
 
-###### I can't remember where I got the icons, so &copy;<icon's author>
+###### I can't remember where I got the icons, so &copy;\<icon's author>
