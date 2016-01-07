@@ -22,12 +22,12 @@ class ViewController: NSViewController {
         let defaults = NSUserDefaults.standardUserDefaults()
         if let url = defaults.URLForKey("wallpaperURL") {
             if url.absoluteString == "" {
-                self.webview.mainFrame.loadRequest(NSURLRequest(URL: NSURL(string: "http://nyan.cat")!))
+                self.webview.mainFrame.loadRequest(NSURLRequest(URL: NSURL(string: "http://cryptoc1.github.io/lw/packages/lw-default/index.html")!))
             } else {
                 self.webview.mainFrame.loadRequest(NSURLRequest(URL: url))
             }
         } else {
-            self.webview.mainFrame.loadRequest(NSURLRequest(URL: NSURL(string: "http://nyan.cat")!))
+            self.webview.mainFrame.loadRequest(NSURLRequest(URL: NSURL(string: "http://cryptoc1.github.io/lw/packages/lw-default/index.html")!))
         }
     }
 
