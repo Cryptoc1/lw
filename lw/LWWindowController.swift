@@ -13,17 +13,15 @@ class LWWindowController: NSWindowController {
     override func windowDidLoad() {
         super.windowDidLoad()
     
-        self.window?.level = Int(CGWindowLevelForKey(.DesktopWindowLevelKey))
-        self.window?.backgroundColor = NSColor(red: 0.75, green: 0.75, blue: 0.75, alpha: 0.75)
+        self.window!.level = Int(CGWindowLevelForKey(.DesktopIconWindowLevelKey))
         let screenSize = ScreenSize()
-        var frame = self.window?.frame
-        frame!.size = CGSizeMake(screenSize.width, screenSize.height)
-        frame?.origin.x = 0
-        frame?.origin.y = 0
-        self.window?.setFrame(frame!, display: true)
+        var frame = self.window!.frame
+        frame.size = CGSizeMake(screenSize.width, screenSize.height)
+        frame.origin.x = 0
+        frame.origin.y = 0
+        self.window!.setFrame(frame, display: true)
         self.window!.movable = true
         self.window!.collectionBehavior = .CanJoinAllSpaces
-        
     }
 
 }

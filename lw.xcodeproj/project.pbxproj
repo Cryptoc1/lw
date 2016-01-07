@@ -12,7 +12,8 @@
 		7E83F9891C3CA4780067717D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E83F9881C3CA4780067717D /* Assets.xcassets */; };
 		7E83F98C1C3CA4780067717D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E83F98A1C3CA4780067717D /* Main.storyboard */; };
 		7E83F9961C3CD2070067717D /* LWWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83F9951C3CD2070067717D /* LWWindowController.swift */; };
-		7E83F9981C3CD3AF0067717D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 7E83F9971C3CD3AF0067717D /* README.md */; };
+		7E83F99B1C3D80E30067717D /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83F99A1C3D80E30067717D /* PreferenceViewController.swift */; };
+		7E83F99D1C3D80F30067717D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83F99C1C3D80F30067717D /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,10 @@
 		7E83F98D1C3CA4780067717D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E83F9951C3CD2070067717D /* LWWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWWindowController.swift; sourceTree = "<group>"; };
 		7E83F9971C3CD3AF0067717D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		7E83F99A1C3D80E30067717D /* PreferenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
+		7E83F99C1C3D80F30067717D /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		7E83F99F1C3E1E3D0067717D /* Docs.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = Docs.md; path = ../Docs.md; sourceTree = "<group>"; };
+		7E83F9A01C3E20AF0067717D /* sample.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = sample.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +62,34 @@
 			isa = PBXGroup;
 			children = (
 				7E83F9841C3CA4780067717D /* AppDelegate.swift */,
-				7E83F9951C3CD2070067717D /* LWWindowController.swift */,
-				7E83F9971C3CD3AF0067717D /* README.md */,
-				7E83F9861C3CA4780067717D /* ViewController.swift */,
-				7E83F9881C3CA4780067717D /* Assets.xcassets */,
 				7E83F98A1C3CA4780067717D /* Main.storyboard */,
-				7E83F98D1C3CA4780067717D /* Info.plist */,
+				7E83F99E1C3D81220067717D /* Controllers */,
+				7E83F9991C3CD5140067717D /* Resources */,
 			);
 			path = lw;
+			sourceTree = "<group>";
+		};
+		7E83F9991C3CD5140067717D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7E83F9A01C3E20AF0067717D /* sample.html */,
+				7E83F9971C3CD3AF0067717D /* README.md */,
+				7E83F99F1C3E1E3D0067717D /* Docs.md */,
+				7E83F9881C3CA4780067717D /* Assets.xcassets */,
+				7E83F98D1C3CA4780067717D /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7E83F99E1C3D81220067717D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E83F9951C3CD2070067717D /* LWWindowController.swift */,
+				7E83F9861C3CA4780067717D /* ViewController.swift */,
+				7E83F99A1C3D80E30067717D /* PreferenceViewController.swift */,
+				7E83F99C1C3D80F30067717D /* AboutViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +164,9 @@
 			files = (
 				7E83F9871C3CA4780067717D /* ViewController.swift in Sources */,
 				7E83F9851C3CA4780067717D /* AppDelegate.swift in Sources */,
-				7E83F9981C3CD3AF0067717D /* README.md in Sources */,
 				7E83F9961C3CD2070067717D /* LWWindowController.swift in Sources */,
+				7E83F99D1C3D80F30067717D /* AboutViewController.swift in Sources */,
+				7E83F99B1C3D80E30067717D /* PreferenceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +271,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = lw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.premefeed.lw;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.cryptoc1.lw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -257,7 +283,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = lw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.premefeed.lw;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.cryptoc1.lw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
